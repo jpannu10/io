@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.landing-page {
+    background: rgba(0, 0, 0, 0.89);
+    color: white;
+    height: 100vh;
+    width: 100%;
+    clip-path: polygon(0 10% , 70% 20% , 100% 30%, 100% 100% , 0 100%);
+}
+
+.content {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-secondary {
+    font-size: 40px;
+}
+
+.heading-primary {
+    font-size: 65px;
+    letter-spacing: 4px;
+    word-spacing: 4px;
+    font-weight: 900;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Cinzel', serif;
+}
+
+.heading-btn {
+    margin-top: 50px;
+    border: none;
+    border-radius: 50px;
+    padding: 6px 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Cinzel', serif;
+    font-family: 'PT Mono', monospace;
+    animation: bottomToTop ;
+    animation-duration: 1s;
+}
+
+@keyframes bottomToTop {
+    0% {
+    opacity: 0;
+    transform : translate(-30px);
+    transform: scale(1.3);
+    }
+
+    100% {
+        opacity:1;
+        transform: scale(1);
+    }
+
+}
+
+.heading-btn:hover {
+
+    cursor: pointer;
+}
+
+
+
+.navigation {
+
+}
+
+.navigation ul li {
+    display: inline;
+    margin-left: 28px;
+}
+
+.navigation ul {
+    position: absolute;
+    bottom: 8px;
+    left: 6px;
+    font-size: 32px;
+}
+
+.nav-clk {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-clk:hover {
+    text-decoration: none;
+}
+
+/* 
+            Project styling here
+*/
+
+.project {
+ height : 100vh;
+}
+
+.project-heading {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding-top : 26px;
+    font-weight : 650;
+    letter-spacing: 5px;
+}
+
+.project-container {
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ border : 2px solid red;
+ padding-top: 60px;
+
+}
+
+.container {
+    border : 2px solid black;
+    height : 250px;
+    width: 350px;
+}
+
+/* 
+         about  
+*/
+
+.parent-about {
+    height : 100vh;
+    border : 2px solid yellowgreen;
+}
+
+
+/* 
+           contact 
+*/
+
+.parent-contact {
+    height : 100vh;
+    border : 2px solid sandybrown;
+}
